@@ -93,7 +93,7 @@
   # services.devmon.enable = true;
 
   # Enable the Plasma 5 Desktop Environment.
-  # services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   # services.xserver.displayManager.startx.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   # services.xserver.windowManager.awesome.enable = true;
