@@ -27,6 +27,9 @@
     # awesome
     # gnome3.gnome-tweaks
     lua
+    sxhkd
+    picom
+    polybar
     lua-language-server
     exa
     mako
