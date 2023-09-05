@@ -57,7 +57,7 @@
     mpv
     lxmenu-data
     shared-mime-info
-    lxappearance
+    # lxappearance
     eww-wayland
     ranger
     socat # workspace switch in eww
