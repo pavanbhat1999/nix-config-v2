@@ -92,6 +92,7 @@
 # cudatoolkit
     betterdiscordctl
     tmux
+    ytfzf
   ];
 
 programs.waybar.enable = true;
