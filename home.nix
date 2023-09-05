@@ -193,4 +193,3 @@ gtk.cursorTheme.name = "Bibata-Modern-Amber";
   });
   programs.home-manager.enable = true;
 }
-
