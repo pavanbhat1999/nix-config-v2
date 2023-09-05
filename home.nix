@@ -91,6 +91,7 @@
     gnome.gvfs
 # cudatoolkit
     betterdiscordctl
+    tmux
   ];
 
 programs.waybar.enable = true;
