@@ -45,7 +45,7 @@
     # swaylock
     swayidle
     swaylock-effects
-    # pass-wayland
+    pass-wayland
     # sway
     pavucontrol
     # configure-gtk
