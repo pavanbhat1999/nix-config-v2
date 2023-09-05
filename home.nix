@@ -24,7 +24,7 @@
     pywal
     hyprland
     i3
-    # awesome
+    awesome
     # gnome3.gnome-tweaks
     lua
     sxhkd
@@ -93,6 +93,7 @@
     betterdiscordctl
     tmux
     ytfzf
+    ueberzugpp
   ];
 
 programs.waybar.enable = true;
