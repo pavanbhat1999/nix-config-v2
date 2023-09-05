@@ -90,6 +90,7 @@
     xfce.thunar
     gnome.gvfs
 # cudatoolkit
+    betterdiscordctl
   ];
 
 programs.waybar.enable = true;
