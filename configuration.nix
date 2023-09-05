@@ -20,7 +20,9 @@
   boot.kernelPackages = pkgs.linuxPackages_zen;
   networking.hostName = "root99"; # Define your hostname.
   # Pick only one of the below networking options.
-  #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  # networking.wireless.userControlled.enable = true;
+  # networking.wireless.networks.FTTH-F4EE.psk = "wifi@mane";
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
