@@ -24,6 +24,9 @@
   # networking.wireless.userControlled.enable = true;
   # networking.wireless.networks.FTTH-F4EE.psk = "wifi@mane";
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+#bluetooth
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
   };
@@ -95,7 +98,7 @@
   # services.devmon.enable = true;
 
   # Enable the Plasma 5 Desktop Environment.
-  # services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   services.xserver.displayManager.startx.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   # services.xserver.windowManager.awesome.enable = true;
