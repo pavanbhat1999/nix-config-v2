@@ -94,6 +94,12 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.gvfs.enable = true;
+  services.tumbler.enable = true;
+
+programs.thunar.plugins = with pkgs.xfce; [
+  thunar-archive-plugin
+  thunar-volman
+];
   # services.udisks2.enable = true;
   # services.devmon.enable = true;
 
@@ -211,7 +217,7 @@
     extraGroups = [ "wheel" "kvm" "input" "networkmanager" "disk" "libvirtd" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
-    yt-dlp
+    # yt-dlp
     ];
   };
   # List packages installed in system profile. To search, run:
@@ -234,7 +240,7 @@
     nodejs
     jdk17
     xorg.xinit
-    libinput # i dont knoe why i put this
+    # libinput # i dont knoe why i put this
     # python3 # for stable diffusion
     # glibc
     # gcc
