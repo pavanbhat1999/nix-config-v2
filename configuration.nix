@@ -235,7 +235,7 @@
     jdk17
     xorg.xinit
     libinput # i dont knoe why i put this
-    python 3 # for stable diffusion
+    python3 # for stable diffusion
   ];
   # home-manager = {
   #   useGlobalPkgs = true;
