@@ -236,6 +236,10 @@
     xorg.xinit
     libinput # i dont knoe why i put this
     python3 # for stable diffusion
+    glibc
+    gcc
+    clang
+    zig
   ];
   # home-manager = {
   #   useGlobalPkgs = true;
