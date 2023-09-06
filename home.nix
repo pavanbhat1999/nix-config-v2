@@ -87,7 +87,6 @@
     nixd
     hyprpaper
 # pcmanfm
-    xfce.thunar
     gnome.gvfs
 # cudatoolkit
     betterdiscordctl

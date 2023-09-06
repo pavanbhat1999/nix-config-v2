@@ -95,11 +95,11 @@
   services.xserver.enable = true;
   services.gvfs.enable = true;
   services.tumbler.enable = true;
-
-programs.thunar.plugins = with pkgs.xfce; [
-  thunar-archive-plugin
-  thunar-volman
-];
+  programs.thunar.enable = true;
+  programs.thunar.plugins = with pkgs.xfce; [
+      thunar-archive-plugin
+          thunar-volman
+  ];
   # services.udisks2.enable = true;
   # services.devmon.enable = true;
 
