@@ -93,6 +93,7 @@
     betterdiscordctl
     tmux
     ytfzf
+    yt-dlp
     ueberzugpp
   ];
 
