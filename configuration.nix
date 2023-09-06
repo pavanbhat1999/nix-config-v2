@@ -211,6 +211,7 @@
     extraGroups = [ "wheel" "kvm" "input" "networkmanager" "disk" "libvirtd" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
+    yt-dlp
     ];
   };
   # List packages installed in system profile. To search, run:
@@ -234,6 +235,7 @@
     jdk17
     xorg.xinit
     libinput # i dont knoe why i put this
+    python 3 # for stable diffusion
   ];
   # home-manager = {
   #   useGlobalPkgs = true;

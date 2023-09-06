@@ -93,8 +93,8 @@
     betterdiscordctl
     tmux
     ytfzf
-    yt-dlp
     ueberzugpp
+    mpd
   ];
 
 programs.waybar.enable = true;
