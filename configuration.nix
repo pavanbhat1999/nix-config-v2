@@ -236,10 +236,12 @@
     xorg.xinit
     libinput # i dont knoe why i put this
     python3 # for stable diffusion
-    glibc
+    # glibc
     gcc
     clang
     zig
+    libglibutil
+    glibc_multi
   ];
   # home-manager = {
   #   useGlobalPkgs = true;

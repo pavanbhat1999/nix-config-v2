@@ -39,7 +39,7 @@
     # configure-gtk
     wayland
     xdg-utils # for opening default programs when clicking links
-    glib # gsettings
+    # glib # gsettings
     # dracula-theme # gtk theme
     # gnome3.adwaita-icon-theme  # default gnome cursors
     # swaylock
