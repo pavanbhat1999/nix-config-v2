@@ -122,13 +122,13 @@ programs.vscode = {
 # };
   };
 
-qt.enable = true;
+# qt.enable = true;
 
 # platform theme "gtk" or "gnome"
-qt.platformTheme = "gtk";
+# qt.platformTheme = "gtk";
 
 # name of the qt theme
-qt.style.name = "adwaita-dark";
+# qt.style.name = "adwaita-dark";
 
 # detected automatically:
 # adwaita, adwaita-dark, adwaita-highcontrast,
@@ -137,7 +137,7 @@ qt.style.name = "adwaita-dark";
 # gtk2, motif, plastique
 
 # package to use
-qt.style.package = pkgs.adwaita-qt;
+# qt.style.package = pkgs.adwaita-qt;
 
    gtk = {
       enable = true;
