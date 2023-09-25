@@ -15,7 +15,7 @@
     grim
     slurp
     cliphist
-    exa
+    eza
     swww
     vscode
     jq
@@ -31,7 +31,6 @@
     picom
     polybar
     lua-language-server
-    exa
     mako
     libnotify
     dbus
@@ -72,7 +71,6 @@
     # gparted
     brave
     zsh
-    exa
     git
     fzf
     ripgrep
@@ -122,13 +120,13 @@ programs.vscode = {
 # };
   };
 
-# qt.enable = true;
+qt.enable = true;
 
 # platform theme "gtk" or "gnome"
-# qt.platformTheme = "gtk";
+qt.platformTheme = "gtk";
 
 # name of the qt theme
-# qt.style.name = "adwaita-dark";
+qt.style.name = "adwaita-dark";
 
 # detected automatically:
 # adwaita, adwaita-dark, adwaita-highcontrast,
