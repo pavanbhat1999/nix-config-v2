@@ -92,6 +92,7 @@
     ytfzf
     ueberzugpp
     mpd
+    wlr-randr
   ];
 
 programs.waybar.enable = true;
@@ -126,7 +127,7 @@ qt.enable = true;
 qt.platformTheme = "gtk";
 
 # name of the qt theme
-qt.style.name = "adwaita-dark";
+qt.style.name = "Tokyonight-Dark-B";
 
 # detected automatically:
 # adwaita, adwaita-dark, adwaita-highcontrast,
