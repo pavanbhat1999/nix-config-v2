@@ -93,6 +93,7 @@
     ueberzugpp
     mpd
     wlr-randr
+    zathura
   ];
 
 programs.waybar.enable = true;

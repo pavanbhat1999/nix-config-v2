@@ -97,7 +97,7 @@
   services.tumbler.enable = true;
   programs.thunar.enable = true;
   programs.thunar.plugins = with pkgs.xfce; [
-      thunar-archive-plugin
+          thunar-archive-plugin
           thunar-volman
   ];
   # services.udisks2.enable = true;
@@ -154,7 +154,7 @@
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
     elisa
     gwenview
-    okular
+    # okular
     oxygen
     khelpcenter
     # konsole
