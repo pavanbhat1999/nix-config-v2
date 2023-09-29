@@ -95,6 +95,7 @@
     wlr-randr
     zathura
     spotify
+    yt-dlp
   ];
 
 programs.waybar.enable = true;
