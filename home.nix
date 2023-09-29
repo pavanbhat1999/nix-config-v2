@@ -94,7 +94,6 @@
     mpd
     wlr-randr
     zathura
-    spotify
     yt-dlp
   ];
 
