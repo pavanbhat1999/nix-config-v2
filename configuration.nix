@@ -206,11 +206,9 @@
     VISUAL = "nvim";
     TERMINAL = "kitty";
 
-#NOTE: for wayland support
-    # NIXOS_OZONE_WL = "1";
-    # MOZ_ENABLE_WAYLAND="1";
+    NIXOS_OZONE_WL = "1";
+    MOZ_ENABLE_WAYLAND="1";
     # QT_QPA_PLATFORMTHEME="qt5ct";
-#qt applications in stand alone window managers
     QT_QPA_PLATFORMTHEME="kde";
   };
   # Define a user account. Don't forget to set a password with ‘passwd’.
