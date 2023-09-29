@@ -94,6 +94,7 @@
     mpd
     wlr-randr
     zathura
+    spotify
   ];
 
 programs.waybar.enable = true;
