@@ -49,7 +49,7 @@
     pavucontrol
     # configure-gtk
     #  thunderbird
-    # discord
+    discord
     # webcord
     # obs-studio
     fastfetch
@@ -95,6 +95,7 @@
     wlr-randr
     zathura
     yt-dlp
+    figlet
   ];
 
 programs.waybar.enable = true;

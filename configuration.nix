@@ -241,12 +241,12 @@
     nodejs
     jdk17
     xorg.xinit
-    # libinput # i dont knoe why i put this
+    # libinput # i dont know why i put this
     # python3 # for stable diffusion
-    # glibc
-    # gcc
-    # clang
-    # zig
+    glibc
+    gcc
+    clang
+    zig
     # libglibutil
     # glibc_multi
   ];
