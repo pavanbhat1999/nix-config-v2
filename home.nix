@@ -84,9 +84,9 @@
     OVMF # dont know what for
     nixd
     hyprpaper
-# pcmanfm
+    # pcmanfm
     gnome.gvfs
-# cudatoolkit
+    # cudatoolkit
     betterdiscordctl
     tmux
     ytfzf
@@ -99,6 +99,14 @@
   ];
 
 programs.waybar.enable = true;
+wayland.windowManager.sway = {
+    enable = true;
+    config = rec {
+        modifier = "Mod4";
+# Use kitty as default terminal
+        terminal = "kitty";
+    };
+};
   programs.git = {
     enable = true;
     userName = "pavanbhat1999";
@@ -141,33 +149,33 @@ qt.style.name = "Tokyonight-Dark-B";
 # package to use
 # qt.style.package = pkgs.adwaita-qt;
 
-   gtk = {
-      enable = true;
-      theme = {
+gtk = {
+    enable = true;
+    theme = {
         name = "Tokyonight-Dark-B";
-        # package = pkgs.cinnamon.mint-themes;
+# package = pkgs.cinnamon.mint-themes;
         package=  pkgs.tokyo-night-gtk;
-      };
-      iconTheme = {
+    };
+    iconTheme = {
         name = "kora";
-        # package = pkgs.papirus-icon-theme;
+# package = pkgs.papirus-icon-theme;
         package = pkgs.kora-icon-theme;
-      };
-      font = {
+    };
+    font = {
         name = "JetBrainsMono Nerd Font";
         size = 12;
-      };
-      gtk3 = {
+    };
+    gtk3 = {
         extraConfig = {
-          gtk-application-prefer-dark-theme = 1;
+            gtk-application-prefer-dark-theme = 1;
         };
-      };
-      gtk4 = {
+    };
+    gtk4 = {
         extraConfig = {
-          gtk-application-prefer-dark-theme = 1;
+            gtk-application-prefer-dark-theme = 1;
         };
-      };
-   };
+    };
+};
 
 gtk.cursorTheme.package = pkgs.bibata-cursors;
 gtk.cursorTheme.name = "Bibata-Modern-Amber";
@@ -185,7 +193,7 @@ gtk.cursorTheme.name = "Bibata-Modern-Amber";
   #   enable = true;
   #   initExtra = "export PATH=/home/root99/bin/scripts:$PATH";
   # };
-  programs.waybar.package = pkgs.waybar.overrideAttrs (oa: {
+programs.waybar.package = pkgs.waybar.overrideAttrs (oa: {
     mesonFlags = (oa.mesonFlags or  [ ]) ++ [ "-Dexperimental=true" ];
     patches = (oa.patches or [ ]) ++ [
       (pkgs.fetchpatch {
@@ -195,5 +203,5 @@ gtk.cursorTheme.name = "Bibata-Modern-Amber";
       })
     ];
   });
-  programs.home-manager.enable = true;
+programs.home-manager.enable = true;
 }
