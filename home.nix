@@ -99,14 +99,14 @@
   ];
 
 programs.waybar.enable = true;
-wayland.windowManager.sway = {
-    enable = true;
-    config = rec {
-        modifier = "Mod4";
-# Use kitty as default terminal
-        terminal = "kitty";
-    };
-};
+# wayland.windowManager.sway = {
+#     enable = true;
+#     config = rec {
+#         modifier = "Mod4";
+# # Use kitty as default terminal
+#         terminal = "kitty";
+#     };
+# };
   programs.git = {
     enable = true;
     userName = "pavanbhat1999";
