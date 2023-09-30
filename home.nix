@@ -49,7 +49,7 @@
     pavucontrol
     # configure-gtk
     #  thunderbird
-    discord
+    # discord
     # webcord
     # obs-studio
     fastfetch
