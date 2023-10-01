@@ -27,6 +27,7 @@
 #bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
+  services.flatpak.enable = true;
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
   };
@@ -105,6 +106,7 @@
 
   # Enable the Plasma 5 Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
+  # services.xserver.displayManager.lightdm.enable = true;
   services.xserver.displayManager.startx.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.awesome.enable = true;
@@ -135,6 +137,7 @@
   #     enableKwallet = true;
   # };
   programs.hyprland.enable = true;
+  programs.sway.enable = true;
   programs.hyprland.xwayland.enable = true;
   security.polkit.enable = true;
   # programs.seahorse.enable = true;
@@ -240,12 +243,12 @@
     nodejs
     jdk17
     xorg.xinit
-    # libinput # i dont knoe why i put this
+    # libinput # i dont know why i put this
     # python3 # for stable diffusion
-    # glibc
-    # gcc
-    # clang
-    # zig
+    glibc
+    gcc
+    clang
+    zig
     # libglibutil
     # glibc_multi
   ];
