@@ -96,6 +96,7 @@
     zathura
     yt-dlp
     figlet
+    playerctl
   ];
 
 programs.waybar.enable = true;
