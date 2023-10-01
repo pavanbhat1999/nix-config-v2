@@ -97,6 +97,8 @@
     yt-dlp
     figlet
     playerctl
+    qbittorrent
+    telegram-desktop
   ];
 
 programs.waybar.enable = true;
