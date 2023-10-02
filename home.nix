@@ -59,7 +59,7 @@
     # lxappearance
     eww-wayland
     ranger
-    lf
+    # lf
     socat # workspace switch in eww
     gnome.zenity
     gimp
