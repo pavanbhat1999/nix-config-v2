@@ -166,7 +166,8 @@ gtk = {
         package = pkgs.kora-icon-theme;
     };
     font = {
-        name = "JetBrainsMono Nerd Font";
+        # name = "JetBrainsMono Nerd Font";
+        name = "Fira Code Retina";
         size = 12;
     };
     gtk3 = {
