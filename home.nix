@@ -100,6 +100,7 @@
     playerctl
     qbittorrent
     telegram-desktop
+    gammastep
   ];
 
 programs.waybar.enable = true;
