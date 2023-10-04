@@ -69,6 +69,7 @@
     tree
     kitty
     alacritty
+    nvd
     # ventoy
     # gparted
     brave
