@@ -68,7 +68,7 @@
     firefox
     tree
     kitty
-    alaccritty
+    alacritty
     # ventoy
     # gparted
     brave
