@@ -9,7 +9,6 @@
     wl-clipboard
     wofi
     rofi-wayland
-    tofi
     dmenu
     rofi-pass
     # rofi-emoji
