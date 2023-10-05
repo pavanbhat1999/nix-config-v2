@@ -291,6 +291,8 @@
       source-han-sans
       source-han-sans-japanese
       source-han-serif-japanese
+      roboto
+      source-sans-pro
       (nerdfonts.override { fonts = [ "Meslo" ]; })
     ];
     fontconfig = {
