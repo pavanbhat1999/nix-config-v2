@@ -78,6 +78,7 @@
         nvidiaBusId = "PCI:1:0:0";
 	};
   programs.dconf.enable = true;
+  # programs.light.enable = true;
   virtualisation.libvirtd.enable = true;
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
