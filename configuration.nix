@@ -293,6 +293,7 @@
       source-han-serif-japanese
       roboto
       source-sans-pro
+      ibm-plex
       (nerdfonts.override { fonts = [ "Meslo" ]; })
     ];
     fontconfig = {
