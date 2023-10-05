@@ -103,6 +103,7 @@
     qbittorrent
     telegram-desktop
     gammastep
+    light
   ];
 
 programs.waybar.enable = true;
