@@ -299,6 +299,7 @@
     fontconfig = {
       enable = true;
       defaultFonts = {
+        # vs code font 'Fira Code','fontello','MesloLGL Nerd Font'
         # monospace = [ "Meslo LG M Regular Nerd Font Complete Mono" ];
         monospace = [ "Fira Code" ];
         serif = [ "Noto Serif" "Source Han Serif" ];
