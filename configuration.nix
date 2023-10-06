@@ -240,6 +240,7 @@
     nfs-utils
     gnome.seahorse
     gnome.gnome-keyring
+    qt6Packages.qtstyleplugin-kvantum
     libsecret
     gcr
     xorg.xhost
