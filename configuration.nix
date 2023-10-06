@@ -241,6 +241,7 @@
     gnome.seahorse
     gnome.gnome-keyring
     qt6Packages.qtstyleplugin-kvantum
+    libsForQt5.qtstyleplugin-kvantum
     libsecret
     gcr
     xorg.xhost
