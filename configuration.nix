@@ -309,6 +309,25 @@
       };
     };
   };
+  systemd.timers."hello-world" = {
+  wantedBy = [ "timers.target" ];
+    timerConfig = {
+      OnBootSec = "5s";
+      OnUnitActiveSec = "5s";
+      Unit = "hello-world.service";
+    };
+};
+
+systemd.services."hello-world" = {
+  script = ''
+    set -eu
+    ${pkgs.coreutils}/bin/echo "Hello World"
+  '';
+  serviceConfig = {
+    Type = "oneshot";
+    User = "root";
+  };
+};
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
