@@ -309,25 +309,28 @@
       };
     };
   };
-  systemd.timers."hello-world" = {
-  wantedBy = [ "timers.target" ];
-    timerConfig = {
-      OnBootSec = "5s";
-      OnUnitActiveSec = "5s";
-      Unit = "hello-world.service";
-    };
-};
-
-systemd.services."hello-world" = {
-  script = ''
-    set -eu
-    ${pkgs.coreutils}/bin/echo "Hello World"
-  '';
-  serviceConfig = {
-    Type = "oneshot";
-    User = "root";
-  };
-};
+#   systemd.timers."hello-world" = {
+#   wantedBy = [ "timers.target" ];
+#     timerConfig = {
+#       OnBootSec = "1m";
+#       OnUnitActiveSec = "1m";
+#       Unit = "hello-world.service";
+#     };
+# };
+#
+# systemd.services."hello-world" = {
+#   environment = {
+#     DISPLAY = ":0";  # Set the appropriate display number if needed
+#     DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/$(id -u)/bus";
+#   };
+#   script = ''
+#     /etc/profiles/per-user/root99/bin/notify-send "Hello World"
+#   '';
+#   serviceConfig = {
+#     Type = "oneshot";
+#     User = "root";
+#   };
+# };
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
