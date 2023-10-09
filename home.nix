@@ -84,7 +84,7 @@
     btop
     htop
     xclip
-    virt-manager
+    # virt-manager
     OVMF # dont know what for
     nixd
     hyprpaper
