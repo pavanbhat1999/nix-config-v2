@@ -122,6 +122,7 @@
   #     };
   # };
   services.xserver.desktopManager.plasma5.enable = true;
+  # services.xserver.desktopManager.cinnamon.enable = true;
   # services.xserver.windowManager.awesome.enable = true;
   # services.xserver.windowManager.i3.enable = true;
   # services.xserver.windowManager.i3.extraSessionCommands = ''
