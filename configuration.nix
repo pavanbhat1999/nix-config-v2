@@ -221,7 +221,8 @@
     PASSWORD_STORE_DIR="/home/root99/.config/pass";
     EDITOR = "nvim";
     VISUAL = "nvim";
-    TERMINAL = "kitty";
+    # TERMINAL = "kitty";
+    TERMINAL = "foot";
 
     NIXOS_OZONE_WL = "1";
     MOZ_ENABLE_WAYLAND="1";
