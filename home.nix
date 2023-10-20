@@ -33,6 +33,7 @@
     polybar
     lua-language-server
     mako
+    swaynotificationcenter
     libnotify
     dbus
     # dbus-sway-environment
