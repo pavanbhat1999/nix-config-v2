@@ -113,6 +113,7 @@
   # services.xserver.displayManager.startx.enable = true;
   services.xserver = {
       displayManager = {
+        sddm.enable = true;
         defaultSession = "hyprland";
         # defaultSession = "plasmawayland";
         autoLogin = {
@@ -268,6 +269,17 @@
     zig
     # libglibutil
     # glibc_multi
+    (
+
+appimageTools.wrapType2 { # or wrapType1
+  name = "thorium";
+  src = fetchurl {
+    url = "https://github.com/Alex313031/thorium/releases/download/M117.0.5938.157/Thorium_Browser_117.0.5938.157_x64.AppImage";
+    hash = "sha256-dlfClBbwSkQg4stKZdSgNg3EFsWksoI21cxRG5SMrOM=";
+  };
+  extraPkgs = pkgs: with pkgs; [ ];
+}
+    )
   ];
   # home-manager = {
   #   useGlobalPkgs = true;
