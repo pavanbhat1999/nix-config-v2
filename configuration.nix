@@ -137,6 +137,11 @@
           auth include login
           '';
   };
+  security.pam.services.gtklock = {
+      text = ''
+          auth include login
+          '';
+  };
   services.dbus.enable = true;
   # security.pam.services.sddm.gnupg.enable=true;
   # security.pam.services.root99.gnupg.enable=true;
