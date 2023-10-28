@@ -28,7 +28,7 @@
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 #bluetooth
   hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
+  # services.blueman.enable = true;
   services.flatpak.enable = true;
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
@@ -164,7 +164,7 @@
     enable = true;
     # wlr.enable = true;
     # gtk portal needed to make gtk apps happy
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk];
+    # extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk];
   };
   # security.pam.services.root99.enableKwallet = true;
   programs.gnupg.agent = {
@@ -183,7 +183,7 @@
     ksshaskpass
     # plasma-browser-integration
     print-manager
-    xdg-desktop-portal-kde
+    # xdg-desktop-portal-kde
   ];
   # Configure keymap in X11
   # services.xserver.layout = "us";
