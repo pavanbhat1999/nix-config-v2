@@ -122,9 +122,10 @@
   #     };
   # };
   services.xserver.desktopManager.plasma5.enable = true;
+  # services.xserver.desktopManager.xfce.enable = true;
   # services.xserver.desktopManager.cinnamon.enable = true;
-  # services.xserver.windowManager.awesome.enable = true;
-  # services.xserver.windowManager.i3.enable = true;
+  services.xserver.windowManager.awesome.enable = true;
+  services.xserver.windowManager.i3.enable = true;
   # services.xserver.windowManager.i3.extraSessionCommands = ''
   #   eval $(gnome-keyring-daemon --daemonize)
   #   export SSH_AUTH_SOCK
@@ -179,9 +180,9 @@
     # okular
     oxygen
     khelpcenter
-    # konsole
+    konsole
     ksshaskpass
-    # plasma-browser-integration
+    plasma-browser-integration
     print-manager
     xdg-desktop-portal-kde
   ];
