@@ -78,7 +78,7 @@
         nvidiaBusId = "PCI:1:0:0";
 	};
   programs.dconf.enable = true;
-  # programs.light.enable = true;
+  programs.light.enable = true;
   virtualisation.libvirtd.enable = true;
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
@@ -238,7 +238,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.root99 = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "kvm" "input" "networkmanager" "disk" "libvirtd" "jackaudio"]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "kvm" "input" "networkmanager" "disk" "libvirtd" "jackaudio" "light" "video" "backlight"]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
     # yt-dlp

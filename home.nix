@@ -34,6 +34,9 @@
     lua-language-server
     mako
     swaynotificationcenter
+    networkmanagerapplet
+    # stalonetray
+    brightnessctl
     libnotify
     dbus
     # dbus-sway-environment
