@@ -109,6 +109,7 @@
     qbittorrent
     telegram-desktop
     gammastep
+    play-with-mpv
     # light
   ];
 
