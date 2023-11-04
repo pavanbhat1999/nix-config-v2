@@ -58,7 +58,8 @@
     discord
     # webcord
     # obs-studio
-    fastfetch
+    # fastfetch
+    neofetch
     mpv
     lxmenu-data
     shared-mime-info
