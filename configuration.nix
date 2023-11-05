@@ -347,8 +347,7 @@ systemd.services.keycode-swap = {
     };
     wantedBy = [ "multi-user.target" ];
     script = ''
-      ${pkgs.kbd}/bin/setkeycodes 117 0 &
-      ${pkgs.kbd}/bin/setkeycodes 77 0
+      ${pkgs.kbd}/bin/setkeycodes 117 0
     '';
   };
 #   systemd.timers."hello-world" = {
