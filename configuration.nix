@@ -114,6 +114,7 @@
   services.xserver = {
       displayManager = {
         sddm.enable = true;
+        # sddm.theme = "{$import ./sddm-theme.nix {inherit pkgs;}}";
         defaultSession = "hyprland";
         # defaultSession = "plasmawayland";
         # autoLogin = {
@@ -261,6 +262,8 @@
     gnome.gnome-keyring
     qt6Packages.qtstyleplugin-kvantum
     libsForQt5.qtstyleplugin-kvantum
+    # libsForQt5.qt5.qtquickcontrols2
+    # libsForQt5.qt5.qtgraphicaleffects
     libsecret
     gcr
     xorg.xhost
