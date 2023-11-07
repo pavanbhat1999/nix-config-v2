@@ -182,7 +182,7 @@
     # okular
     oxygen
     khelpcenter
-    konsole
+    # konsole
     ksshaskpass
     plasma-browser-integration
     print-manager
