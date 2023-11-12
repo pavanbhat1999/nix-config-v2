@@ -342,17 +342,17 @@ appimageTools.wrapType2 { # or wrapType1
       };
     };
   };
-systemd.services.keycode-swap = {
-    enable = true;
-    serviceConfig = {
-      Type = "oneshot";
-      RemainAfterExit = true;
-    };
-    wantedBy = [ "multi-user.target" ];
-    script = ''
-      ${pkgs.kbd}/bin/setkeycodes 117 0
-    '';
-  };
+# systemd.services.keycode-swap = {
+#     enable = true;
+#     serviceConfig = {
+#       Type = "oneshot";
+#       RemainAfterExit = true;
+#     };
+#     wantedBy = [ "multi-user.target" ];
+#     script = ''
+#       ${pkgs.kbd}/bin/setkeycodes 117 0
+#     '';
+#   };
 #   systemd.timers."hello-world" = {
 #   wantedBy = [ "timers.target" ];
 #     timerConfig = {
