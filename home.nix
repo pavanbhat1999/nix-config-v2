@@ -1,15 +1,6 @@
 { inputs, config, pkgs, ... }:
 {
   imports = [ inputs.ags.homeManagerModules.default ];
-  # programs.ags = {
-  #   enable = true;
-  #
-  #   # null or path, leave as null if you don't want hm to manage the config
-  #   configDir = null;
-  #
-  #   # packages to add to gjs's runtime
-  #   extraPackages = [ pkgs.libsoup_3 ];
-  # };
   home.username = "root99";
   home.homeDirectory = "/home/root99";
   home.stateVersion = "23.05";
