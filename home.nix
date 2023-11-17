@@ -1,6 +1,5 @@
 { inputs, config, pkgs, ... }:
 {
-  imports = [ inputs.ags.homeManagerModules.default ];
   home.username = "root99";
   home.homeDirectory = "/home/root99";
   home.stateVersion = "23.05";
