@@ -1,11 +1,14 @@
 { inputs, lib, config, pkgs, ... }:
 {
+  imports = [ inputs.ags.homeManagerModules.default ];
   home.username = "root99";
   home.homeDirectory = "/home/root99";
   home.stateVersion = "23.05";
   home.packages = with pkgs; [
     home-manager
     wl-clipboard
+    sassc
+    hyprpicker
     wofi
     rofi-wayland
     tofi
@@ -204,7 +207,15 @@ gtk.cursorTheme.name = "Bibata-Modern-Amber";
 #       package = pkgs.materia-theme;
 #     };
 #   };
+  programs.ags = {
+    enable = true;
 
+    # null or path, leave as null if you don't want hm to manage the config
+    # configDir = null;
+
+    # packages to add to gjs's runtime
+    extraPackages = [ pkgs.libsoup_3 ];
+  };
   # programs.zsh = {
   #   enable = true;
   #   initExtra = "export PATH=/home/root99/bin/scripts:$PATH";
