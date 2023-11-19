@@ -108,19 +108,22 @@
   # services.devmon.enable = true;
 
   # Enable the Plasma 5 Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
+  # services.xserver.displayManager.sddm.enable = true;
   # services.xserver.displayManager.lightdm.enable = true;
   # services.xserver.displayManager.startx.enable = true;
-  # services.xserver = {
-  #     displayManager = {
-  #       defaultSession = "hyprland";
-  #       # defaultSession = "plasmawayland";
-  #       autoLogin = {
-  #         enable = true;
-  #         user = "root99";
-  #       };
-  #     };
-  # };
+  services.xserver = {
+      displayManager = {
+          sddm={
+              enable=true;
+          };
+        # defaultSession = "hyprland";
+        defaultSession = "plasmawayland";
+        # autoLogin = {
+        #   enable = true;
+        #   user = "root99";
+        # };
+      };
+  };
   services.xserver.desktopManager.plasma5.enable = true;
   # services.xserver.desktopManager.cinnamon.enable = true;
   # services.xserver.windowManager.awesome.enable = true;
@@ -155,9 +158,9 @@
   #     name = "kwallet";
   #     enableKwallet = true;
   # };
-  programs.hyprland.enable = true;
-  programs.sway.enable = true;
-  programs.hyprland.xwayland.enable = true;
+  # programs.hyprland.enable = true;
+  # programs.sway.enable = true;
+  # programs.hyprland.xwayland.enable = true;
   security.polkit.enable = true;
   # programs.seahorse.enable = true;
   xdg.portal = {
