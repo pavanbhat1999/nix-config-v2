@@ -12,6 +12,7 @@
     tofi
     dmenu
     rofi-pass
+    foot
     # rofi-emoji
     grim
     slurp
