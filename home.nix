@@ -55,7 +55,7 @@
     #  thunderbird
     discord
     # webcord
-    # obs-studio
+    obs-studio
     fastfetch
     mpv
     lxmenu-data

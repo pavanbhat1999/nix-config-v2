@@ -167,7 +167,7 @@
     enable = true;
     # wlr.enable = true;
     # gtk portal needed to make gtk apps happy
-    # extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk];
+    # extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-wlr ];
   };
   # security.pam.services.root99.enableKwallet = true;
   programs.gnupg.agent = {
