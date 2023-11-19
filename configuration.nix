@@ -229,18 +229,18 @@
     PASSWORD_STORE_DIR="/home/root99/.config/pass";
     EDITOR = "nvim";
     VISUAL = "nvim";
-    # TERMINAL = "kitty";
-    TERMINAL = "foot";
+    TERMINAL = "kitty";
+    # TERMINAL = "foot";
 
     NIXOS_OZONE_WL = "1";
     MOZ_ENABLE_WAYLAND="1";
     # QT_QPA_PLATFORMTHEME="qt5ct";
-    QT_QPA_PLATFORMTHEME="kde";
+    # QT_QPA_PLATFORMTHEME="kde";
   };
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.root99 = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "kvm" "input" "networkmanager" "disk" "libvirtd" "jackaudio"]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "kvm" "input" "networkmanager" "disk" "libvirtd" "jackaudio" "video"]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
     # yt-dlp

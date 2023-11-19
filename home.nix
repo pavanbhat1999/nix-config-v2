@@ -144,13 +144,13 @@ programs.vscode = {
 # };
   };
 
-qt.enable = true;
+# qt.enable = true;
 
 # platform theme "gtk" or "gnome"
-qt.platformTheme = "gtk";
+# qt.platformTheme = "gtk";
 
 # name of the qt theme
-qt.style.name = "Tokyonight-Dark-B";
+# qt.style.name = "Tokyonight-Dark-B";
 
 # detected automatically:
 # adwaita, adwaita-dark, adwaita-highcontrast,
