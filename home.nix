@@ -37,17 +37,12 @@
     mako
     swaynotificationcenter
     networkmanagerapplet
-    # stalonetray
     brightnessctl
     libnotify
     dbus
-    # dbus-sway-environment
-    # configure-gtk
     wayland
     xdg-utils # for opening default programs when clicking links
     # glib # gsettings
-    # dracula-theme # gtk theme
-    # gnome3.adwaita-icon-theme  # default gnome cursors
     # swaylock
     swayidle
     swaylock-effects
@@ -55,17 +50,14 @@
     pass-wayland
     # sway
     pavucontrol
-    # configure-gtk
     #  thunderbird
     discord
-    # webcord
     # obs-studio
     fastfetch
     neofetch
     mpv
     lxmenu-data
     shared-mime-info
-    # lxappearance
     eww-wayland
     ranger
     # lf
