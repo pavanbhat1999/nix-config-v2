@@ -7,6 +7,11 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     ags.url = "github:Aylur/ags";
+# hyprland.url = "github:hyprwm/Hyprland";
+#   hycov={
+#       url = "github:DreamMaoMao/hycov";
+#       inputs.hyprland.follows = "hyprland";
+#     };
   };
 
   outputs = inputs@{ nixpkgs, home-manager,ags, ... }: {
