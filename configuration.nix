@@ -117,7 +117,7 @@
               enable=true;
           };
         # defaultSession = "hyprland";
-        defaultSession = "plasmawayland";
+        # defaultSession = "plasmawayland";
         # autoLogin = {
         #   enable = true;
         #   user = "root99";
@@ -158,9 +158,9 @@
   #     name = "kwallet";
   #     enableKwallet = true;
   # };
-  programs.hyprland.enable = true;
+  # programs.hyprland.enable = true;
   # programs.sway.enable = true;
-  programs.hyprland.xwayland.enable = true;
+  # programs.hyprland.xwayland.enable = true;
   security.polkit.enable = true;
   # programs.seahorse.enable = true;
   xdg.portal = {
@@ -232,8 +232,8 @@
     TERMINAL = "kitty";
     # TERMINAL = "foot";
 
-    NIXOS_OZONE_WL = "1";
-    MOZ_ENABLE_WAYLAND="1";
+    # NIXOS_OZONE_WL = "1";
+    # MOZ_ENABLE_WAYLAND="1";
     # QT_QPA_PLATFORMTHEME="qt5ct";
     # QT_QPA_PLATFORMTHEME="kde";
   };
