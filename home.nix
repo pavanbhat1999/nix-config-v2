@@ -52,7 +52,7 @@
     pavucontrol
     #  thunderbird
     discord
-    # obs-studio
+    obs-studio
     fastfetch
     neofetch
     mpv
