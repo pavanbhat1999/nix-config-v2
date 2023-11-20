@@ -28,7 +28,7 @@
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 #bluetooth
   hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
+  # services.blueman.enable = true;
   services.flatpak.enable = true;
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
