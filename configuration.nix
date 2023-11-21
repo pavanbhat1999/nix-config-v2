@@ -181,6 +181,10 @@
     gwenview
     # okular
     oxygen
+    akonadi
+    kontact
+    kmail
+    akregator
     khelpcenter
     # konsole
     ksshaskpass
