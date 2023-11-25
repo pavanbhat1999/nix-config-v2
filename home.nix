@@ -9,6 +9,11 @@
     wl-clipboard
     sassc
     hyprpicker
+    google-chrome
+    libreoffice-qt
+    hunspell
+    hunspellDicts.uk_UA
+    hunspellDicts.th_TH
     wofi
     rofi-wayland
     tofi
