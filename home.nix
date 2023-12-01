@@ -72,6 +72,7 @@
     # nvidia-vaapi-driver
     # egl-wayland
     firefox
+    tlp
     tree
     kitty
     alacritty
