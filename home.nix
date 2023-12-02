@@ -75,6 +75,7 @@
     tlp
     tree
     kitty
+    foot
     alacritty
     nvd
     # ventoy

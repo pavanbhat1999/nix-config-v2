@@ -160,7 +160,7 @@
   #     enableKwallet = true;
   # };
   programs.hyprland.enable = true;
-  programs.sway.enable = true;
+  # programs.sway.enable = true;
   programs.hyprland.xwayland.enable = true;
   security.polkit.enable = true;
   # programs.seahorse.enable = true;
