@@ -15,11 +15,14 @@
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # boot.loader.systemd-boot.enable = true;
+  # boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "nodev";
+  boot.loader.grub.useOSProber = true;
   boot.supportedFilesystems = [ "ntfs" ];
   # boot.kernelParams = ["nvidia_drm.modeset=1"];
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  # boot.kernelPackages = pkgs.linuxPackages_zen;
   networking.hostName = "root99"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -79,7 +82,7 @@
 	};
   programs.dconf.enable = true;
   programs.light.enable = true;
-  virtualisation.libvirtd.enable = true;
+  # virtualisation.libvirtd.enable = true;
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
 
@@ -191,7 +194,7 @@
     ksshaskpass
     plasma-browser-integration
     print-manager
-    xdg-desktop-portal-kde
+    # xdg-desktop-portal-kde
   ];
   # Configure keymap in X11
   # services.xserver.layout = "us";
