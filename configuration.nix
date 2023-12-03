@@ -32,7 +32,7 @@
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 #bluetooth
   hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
+  # services.blueman.enable = true;
   services.flatpak.enable = true;
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
@@ -119,7 +119,7 @@
       displayManager = {
         sddm.enable = true;
         # sddm.theme = "{$import ./sddm-theme.nix {inherit pkgs;}}";
-        defaultSession = "hyprland";
+        # defaultSession = "hyprland";
         # defaultSession = "plasmawayland";
         # autoLogin = {
         #   enable = true;
@@ -193,7 +193,7 @@
     khelpcenter
     # konsole
     ksshaskpass
-    plasma-browser-integration
+    # plasma-browser-integration
     print-manager
     # xdg-desktop-portal-kde
   ];
