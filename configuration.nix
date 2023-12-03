@@ -182,15 +182,15 @@
   programs.gnupg.agent.pinentryFlavor="qt";
   services.pcscd.enable = true;
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    elisa
-    gwenview
+    # elisa
+    # gwenview
     # okular
     oxygen
-    akonadi
+    # akonadi
     kontact
     kmail
     akregator
-    khelpcenter
+    # khelpcenter
     # konsole
     ksshaskpass
     # plasma-browser-integration
