@@ -15,11 +15,12 @@
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Use the systemd-boot EFI boot loader.
-  # boot.loader.systemd-boot.enable = true;
-  # boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  #boot.loader.grub.enable = true;
+  #boot.loader.grub.device = "nodev";
+  #boot.loader.grub.efiSupport = true;
+  #boot.loader.grub.useOSProber = true;
   boot.supportedFilesystems = [ "ntfs" ];
   # boot.kernelParams = ["nvidia_drm.modeset=1"];
   # boot.kernelPackages = pkgs.linuxPackages_zen;
